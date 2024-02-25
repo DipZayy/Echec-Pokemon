@@ -15,5 +15,9 @@ public class Main {
 
         //Annonce du gagant
         System.out.println("C'est le pokemon " + win + " qui a gagné.");
+
+        Plateau plat = new Plateau() ;
+        System.out.println(plat);
+        MainGraphique.affichage() ;
     }
 }

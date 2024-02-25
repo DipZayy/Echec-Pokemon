@@ -69,10 +69,10 @@ public class Plateau {
         Pokemon poke19 = new Florizarre();
         tableau.add(18,new Piece(3,2,poke19,1));
 
-        Pokemon poke20 = new Carabaffe();
+        Pokemon poke20 = new Tortank();
         tableau.add(19,new Piece(4,2,poke20,1));
 
-        Pokemon poke21 = new Tortank();
+        Pokemon poke21 = new Dracaufeu();
         tableau.add(20,new Piece(5,2,poke21,1));
 
         //---------------------Ligne 6---------------------//      Joueur 2
@@ -80,10 +80,10 @@ public class Plateau {
         Pokemon poke22 = new Dracaufeu();
         tableau.add(21,new Piece(3,6,poke22,2));
 
-        Pokemon poke23 = new Carabaffe();
+        Pokemon poke23 = new Tortank();
         tableau.add(22,new Piece(4,6,poke23,2));
 
-        Pokemon poke24 = new Dracaufeu();
+        Pokemon poke24 = new Florizarre();
         tableau.add(23,new Piece(5,6,poke24,2));
 
         //---------------------Ligne 7---------------------//
@@ -190,8 +190,51 @@ public class Plateau {
         return null ;
     }
 
+    public ArrayList<Piece> getPiecesJoueur1() {
 
+        ArrayList<Piece> pokeJoueur1 = new ArrayList<Piece>();
+        Piece temp = new Piece();
+        int j = 0 ;
 
+        for (int i = 0 ; i < tableau.size() ; i++){
 
+            temp = tableau.get(i);
 
+            if (temp.getPlayer() == 1){
+                pokeJoueur1.add(j,temp);
+                j++ ;
+            }
+        }
+        return pokeJoueur1 ;
+    }
+
+    public ArrayList<Piece> getPiecesJoueur2() {
+
+        ArrayList<Piece> pokeJoueur2 = new ArrayList<Piece>();
+        Piece temp = new Piece();
+        int j = 0 ;
+
+        for (int i = 0 ; i < tableau.size() ; i++){
+
+            temp = tableau.get(i);
+
+            if (temp.getPlayer() == 2){
+                pokeJoueur2.add(j,temp);
+                j++ ;
+            }
+        }
+        return pokeJoueur2 ;
+    }
+
+    public String toString(){
+        String liste_pokemon = new String() ;
+        Piece temp = new Piece();
+        
+        for (int i = 0 ; i < tableau.size() ; i++){
+            temp = tableau.get(i);
+            liste_pokemon = liste_pokemon + temp.toString();
+        }
+
+        return liste_pokemon ;
+    }
 }

@@ -68,6 +68,6 @@ public class Piece {
     }
 
     public String toString(){
-        return this.pokemon + " Il se situe en " + this.coordonees + " et appartient au joueur " + this.player;
+        return " Ce pokemon se situe en " + this.coordonees + " , il appartient au joueur " + this.player + " : " + this.pokemon + "\n";
     }
 }
