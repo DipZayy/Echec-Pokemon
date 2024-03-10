@@ -8,4 +8,7 @@ super(18,nom,Type.NORMAL,Type.VOL,83,80,75,91);
 public String getEspece() {
 return "Roucarnage";
 }
+public int getNumero() {
+return 18;
+}
 }

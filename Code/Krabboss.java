@@ -8,4 +8,7 @@ super(99,nom,Type.EAU,Type.SANS,55,130,115,75);
 public String getEspece() {
 return "Krabboss";
 }
+public int getNumero() {
+return 99;
+}
 }

@@ -8,4 +8,7 @@ super(79,nom,Type.EAU,Type.PSY,90,65,65,15);
 public String getEspece() {
 return "Ramoloss";
 }
+public int getNumero() {
+return 79;
+}
 }

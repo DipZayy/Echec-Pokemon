@@ -8,4 +8,7 @@ super(150,nom,Type.PSY,Type.SANS,106,110,90,130);
 public String getEspece() {
 return "Mewtwo";
 }
+public int getNumero() {
+return 150;
+}
 }

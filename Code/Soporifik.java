@@ -8,4 +8,7 @@ super(96,nom,Type.PSY,Type.SANS,60,48,45,42);
 public String getEspece() {
 return "Soporifik";
 }
+public int getNumero() {
+return 96;
+}
 }

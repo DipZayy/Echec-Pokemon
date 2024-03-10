@@ -8,4 +8,7 @@ super(11,nom,Type.INSECTE,Type.SANS,50,20,55,30);
 public String getEspece() {
 return "Chrysacier";
 }
+public int getNumero() {
+return 11;
+}
 }

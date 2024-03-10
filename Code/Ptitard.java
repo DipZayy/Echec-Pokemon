@@ -8,4 +8,7 @@ super(60,nom,Type.EAU,Type.SANS,40,50,40,90);
 public String getEspece() {
 return "Ptitard";
 }
+public int getNumero() {
+return 60;
+}
 }

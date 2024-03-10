@@ -8,4 +8,7 @@ super(47,nom,Type.INSECTE,Type.PLANTE,60,95,80,30);
 public String getEspece() {
 return "Parasect";
 }
+public int getNumero() {
+return 47;
+}
 }

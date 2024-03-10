@@ -8,4 +8,7 @@ super(17,nom,Type.NORMAL,Type.VOL,63,60,55,71);
 public String getEspece() {
 return "Roucoups";
 }
+public int getNumero() {
+return 17;
+}
 }

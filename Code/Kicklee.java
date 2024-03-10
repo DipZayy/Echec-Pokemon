@@ -8,4 +8,7 @@ super(106,nom,Type.COMBAT,Type.SANS,50,120,53,87);
 public String getEspece() {
 return "Kicklee";
 }
+public int getNumero() {
+return 106;
+}
 }

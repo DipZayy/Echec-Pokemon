@@ -8,4 +8,7 @@ super(109,nom,Type.POISON,Type.SANS,40,65,95,35);
 public String getEspece() {
 return "Smogo";
 }
+public int getNumero() {
+return 109;
+}
 }

@@ -8,4 +8,7 @@ super(146,nom,Type.FEU,Type.VOL,90,100,90,90);
 public String getEspece() {
 return "Sulfura";
 }
+public int getNumero() {
+return 146;
+}
 }

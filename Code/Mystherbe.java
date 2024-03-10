@@ -8,4 +8,7 @@ super(43,nom,Type.PLANTE,Type.POISON,45,50,55,30);
 public String getEspece() {
 return "Mystherbe";
 }
+public int getNumero() {
+return 43;
+}
 }

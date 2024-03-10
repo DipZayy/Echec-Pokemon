@@ -8,4 +8,7 @@ super(21,nom,Type.NORMAL,Type.VOL,40,60,30,70);
 public String getEspece() {
 return "Piafabec";
 }
+public int getNumero() {
+return 21;
+}
 }

@@ -8,4 +8,7 @@ super(71,nom,Type.PLANTE,Type.POISON,80,105,65,70);
 public String getEspece() {
 return "Empiflor";
 }
+public int getNumero() {
+return 71;
+}
 }

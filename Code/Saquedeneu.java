@@ -8,4 +8,7 @@ super(114,nom,Type.PLANTE,Type.SANS,65,55,115,60);
 public String getEspece() {
 return "Saquedeneu";
 }
+public int getNumero() {
+return 114;
+}
 }

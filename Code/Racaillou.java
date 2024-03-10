@@ -8,4 +8,7 @@ super(74,nom,Type.ROCHE,Type.SOL,40,80,100,20);
 public String getEspece() {
 return "Racaillou";
 }
+public int getNumero() {
+return 74;
+}
 }

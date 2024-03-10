@@ -8,4 +8,7 @@ super(34,nom,Type.POISON,Type.SOL,81,92,77,85);
 public String getEspece() {
 return "Nidoking";
 }
+public int getNumero() {
+return 34;
+}
 }

@@ -8,4 +8,7 @@ super(125,nom,Type.ELECTRIK,Type.SANS,65,83,57,105);
 public String getEspece() {
 return "Elektek";
 }
+public int getNumero() {
+return 125;
+}
 }

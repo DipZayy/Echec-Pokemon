@@ -8,4 +8,7 @@ super(12,nom,Type.INSECTE,Type.VOL,60,45,50,70);
 public String getEspece() {
 return "Papilusion";
 }
+public int getNumero() {
+return 12;
+}
 }

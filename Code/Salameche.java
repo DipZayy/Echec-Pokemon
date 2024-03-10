@@ -8,4 +8,7 @@ super(4,nom,Type.FEU,Type.SANS,39,52,43,65);
 public String getEspece() {
 return "Salameche";
 }
+public int getNumero() {
+return 4;
+}
 }

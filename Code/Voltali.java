@@ -8,4 +8,7 @@ super(135,nom,Type.ELECTRIK,Type.SANS,65,65,60,130);
 public String getEspece() {
 return "Voltali";
 }
+public int getNumero() {
+return 135;
+}
 }

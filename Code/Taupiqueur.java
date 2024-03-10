@@ -8,4 +8,7 @@ super(50,nom,Type.SOL,Type.SANS,10,55,25,95);
 public String getEspece() {
 return "Taupiqueur";
 }
+public int getNumero() {
+return 50;
+}
 }

@@ -8,4 +8,7 @@ super(2,nom,Type.PLANTE,Type.POISON,60,62,63,60);
 public String getEspece() {
 return "Herbizarre";
 }
+public int getNumero() {
+return 2;
+}
 }

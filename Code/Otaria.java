@@ -8,4 +8,7 @@ super(86,nom,Type.EAU,Type.SANS,65,45,55,45);
 public String getEspece() {
 return "Otaria";
 }
+public int getNumero() {
+return 86;
+}
 }

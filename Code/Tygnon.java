@@ -8,4 +8,7 @@ super(107,nom,Type.COMBAT,Type.SANS,50,105,79,76);
 public String getEspece() {
 return "Tygnon";
 }
+public int getNumero() {
+return 107;
+}
 }

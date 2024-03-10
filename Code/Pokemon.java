@@ -9,7 +9,9 @@ public abstract class Pokemon {
     private int def;
     private int vitesse;
 
-    public Pokemon() {                          // Constructeur par defaut
+    //Constructeur par defaut
+
+    public Pokemon() {
         this.numPokemon = 1;
         this.nomPokemon = "Bulbizarre";
         this.type1 = 3;
@@ -20,7 +22,9 @@ public abstract class Pokemon {
         this.vitesse = 45;
     }
 
-    public Pokemon(int numPokemon, String nomPokemon, int type1, int type2, int pv, int atk, int def, int vitesse) {     // Constructeur par parametres
+    //Constructeur par parametres
+
+    public Pokemon(int numPokemon, String nomPokemon, int type1, int type2, int pv, int atk, int def, int vitesse) {
         this.numPokemon = numPokemon;
         this.nomPokemon = nomPokemon;
         this.type1 = type1;
@@ -31,46 +35,51 @@ public abstract class Pokemon {
         this.vitesse = vitesse;
     }
 
-    public String attaque(Pokemon pokemon2) {
+    //Cette fonction permet de faire combattre deux pokémons
 
-        int degPoke1 = this.atk - pokemon2.def ;                         //On définit les dégats en fonction de l'atk et def
+    public int attaque(Pokemon pokemon2) {
+
+        int degPoke1 = this.atk - pokemon2.def ; 
         int degPoke2 = pokemon2.atk - this.def ;
 
-        if (degPoke1 < 0){                                               //Si les dégats sont < 0 on les met à 0 pour eviter les gain de PV
+        if (degPoke1 < 0){  
             degPoke1 = 1 ;
         }
-        if (degPoke2 < 0){                                               //Comme au dessus mais pour le second pokemon
+        if (degPoke2 < 0){  
             degPoke2 = 1 ;
         }
 
-        if (this.equals(pokemon2)){
-            return "Erreur , les deux pokémon sont identiques" ;
-        }
-
-        while (this.pv > 0 || pokemon2.pv > 0) {
-            if (this.vitesse >= pokemon2.vitesse) {                       // Alors le pokemon 1 a la priorité
+        while (true) {
+            if (this.vitesse >= pokemon2.vitesse) {   
                 pokemon2.pv = pokemon2.pv - degPoke1 ;
-                if (pokemon2.pv > 0) {                                    // Ensuite c'est le tours de poke 2 s'il est encore en vie
+                if (pokemon2.pv > 0) {         
                     this.pv = this.pv - degPoke2 ;
                 } 
-                else {                                                    // Sinon c'est victoire du pokemon 1
-                    return this.getEspece() + " nommé " + this.nomPokemon ; 
+                if (this.pv <= 0){
+                    return 2;
+                }
+                if(pokemon2.pv <= 0) {    
+                    return 1 ; 
                 }
             } 
-            else {                                                        // Sinon c'est Pokemon 2 qui a la priorité
+            else {   
                 this.pv = this.pv - degPoke2;
-                if (this.pv > 0) {                                        // Ensuite c'est le tours de poke 1 s'il est encore en vie
+                if (this.pv > 0) {      
                     pokemon2.pv = pokemon2.pv - degPoke1 ;
                 } 
-                else {                                                    // Sinon c'est victoire du pokemon 2
-                    return pokemon2.getEspece() + " nommé " + pokemon2.nomPokemon ; 
+                if (this.pv <= 0){
+                    return 2;
+                }
+                if(pokemon2.pv <= 0) {        
+                    return 1 ; 
                 }
             }
         }
-        return "erreur"; // Si erreur ?
     }
 
-    public String toString() {                                           //Permet d'afficher toute les informations relative a un pokemon
+    //Cette fonction retourne une chaine de caractère avec tout les attributs d'un pokémon
+
+    public String toString() {      
         return "Ce pokemon est un "+this.getEspece()+ 
         " (Numéro : " + this.numPokemon + ")"+
         " nommé "+this.nomPokemon +
@@ -82,6 +91,17 @@ public abstract class Pokemon {
         this.vitesse+" de vittesse." ;
     }
 
+    //Permet de récuperer les PV d'un pokémon
+
+    public int getPV(){
+        return this.pv;
+    }
+
+    //Méthode abstraite qui retourne l'espece d'un pokémon
+
     public abstract String getEspece();
 
+    //Méthode abstraite qui retourne le numéro d'un pokémon
+
+    public abstract int getNumero();
 }

@@ -8,4 +8,7 @@ super(75,nom,Type.ROCHE,Type.SOL,55,95,115,35);
 public String getEspece() {
 return "Gravalanch";
 }
+public int getNumero() {
+return 75;
+}
 }

@@ -8,4 +8,7 @@ super(116,nom,Type.EAU,Type.SANS,30,40,70,60);
 public String getEspece() {
 return "Hypotrempe";
 }
+public int getNumero() {
+return 116;
+}
 }

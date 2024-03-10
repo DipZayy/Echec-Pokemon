@@ -8,4 +8,7 @@ super(103,nom,Type.PLANTE,Type.PSY,95,95,85,55);
 public String getEspece() {
 return "Noadkoko";
 }
+public int getNumero() {
+return 103;
+}
 }

@@ -8,4 +8,7 @@ super(10,nom,Type.INSECTE,Type.SANS,45,30,35,45);
 public String getEspece() {
 return "Chenipan";
 }
+public int getNumero() {
+return 10;
+}
 }

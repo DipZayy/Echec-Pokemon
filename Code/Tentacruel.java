@@ -8,4 +8,7 @@ super(73,nom,Type.EAU,Type.POISON,80,70,65,100);
 public String getEspece() {
 return "Tentacruel";
 }
+public int getNumero() {
+return 73;
+}
 }

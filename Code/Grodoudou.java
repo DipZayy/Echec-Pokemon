@@ -8,4 +8,7 @@ super(40,nom,Type.NORMAL,Type.SANS,140,70,45,45);
 public String getEspece() {
 return "Grodoudou";
 }
+public int getNumero() {
+return 40;
+}
 }

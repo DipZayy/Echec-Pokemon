@@ -8,4 +8,7 @@ super(37,nom,Type.FEU,Type.SANS,38,41,40,65);
 public String getEspece() {
 return "Goupix";
 }
+public int getNumero() {
+return 37;
+}
 }

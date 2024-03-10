@@ -8,4 +8,7 @@ super(66,nom,Type.COMBAT,Type.SANS,70,80,50,35);
 public String getEspece() {
 return "Machoc";
 }
+public int getNumero() {
+return 66;
+}
 }

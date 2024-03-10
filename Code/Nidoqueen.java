@@ -8,4 +8,7 @@ super(31,nom,Type.POISON,Type.SOL,90,82,87,76);
 public String getEspece() {
 return "Nidoqueen";
 }
+public int getNumero() {
+return 31;
+}
 }

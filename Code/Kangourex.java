@@ -8,4 +8,7 @@ super(115,nom,Type.NORMAL,Type.SANS,105,95,80,90);
 public String getEspece() {
 return "Kangourex";
 }
+public int getNumero() {
+return 115;
+}
 }

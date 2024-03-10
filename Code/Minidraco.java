@@ -8,4 +8,7 @@ super(147,nom,Type.DRAGON,Type.SANS,41,64,45,50);
 public String getEspece() {
 return "Minidraco";
 }
+public int getNumero() {
+return 147;
+}
 }

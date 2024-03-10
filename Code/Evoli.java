@@ -8,4 +8,7 @@ super(133,nom,Type.NORMAL,Type.SANS,55,55,50,55);
 public String getEspece() {
 return "Evoli";
 }
+public int getNumero() {
+return 133;
+}
 }

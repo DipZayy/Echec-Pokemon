@@ -8,4 +8,7 @@ super(62,nom,Type.EAU,Type.COMBAT,90,85,95,70);
 public String getEspece() {
 return "Tartard";
 }
+public int getNumero() {
+return 62;
+}
 }

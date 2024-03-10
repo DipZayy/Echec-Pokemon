@@ -8,4 +8,7 @@ super(139,nom,Type.ROCHE,Type.EAU,70,60,125,55);
 public String getEspece() {
 return "Amonistar";
 }
+public int getNumero() {
+return 139;
+}
 }

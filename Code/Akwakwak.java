@@ -8,4 +8,7 @@ super(55,nom,Type.EAU,Type.SANS,80,82,78,85);
 public String getEspece() {
 return "Akwakwak";
 }
+public int getNumero() {
+return 55;
+}
 }

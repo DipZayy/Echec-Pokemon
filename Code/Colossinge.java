@@ -8,4 +8,7 @@ super(57,nom,Type.COMBAT,Type.SANS,65,105,60,95);
 public String getEspece() {
 return "Colossinge";
 }
+public int getNumero() {
+return 57;
+}
 }

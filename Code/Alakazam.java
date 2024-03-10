@@ -8,4 +8,7 @@ super(65,nom,Type.PSY,Type.SANS,55,50,45,120);
 public String getEspece() {
 return "Alakazam";
 }
+public int getNumero() {
+return 65;
+}
 }

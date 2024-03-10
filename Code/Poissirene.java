@@ -8,4 +8,7 @@ super(118,nom,Type.EAU,Type.SANS,45,67,60,63);
 public String getEspece() {
 return "Poissirene";
 }
+public int getNumero() {
+return 118;
+}
 }

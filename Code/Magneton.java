@@ -8,4 +8,7 @@ super(82,nom,Type.ELECTRIK,Type.SANS,50,60,95,70);
 public String getEspece() {
 return "Magneton";
 }
+public int getNumero() {
+return 82;
+}
 }

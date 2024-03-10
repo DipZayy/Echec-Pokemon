@@ -8,4 +8,7 @@ super(142,nom,Type.ROCHE,Type.VOL,80,105,65,130);
 public String getEspece() {
 return "Ptera";
 }
+public int getNumero() {
+return 142;
+}
 }

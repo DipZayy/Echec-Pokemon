@@ -8,4 +8,7 @@ super(29,nom,Type.POISON,Type.SANS,55,47,52,41);
 public String getEspece() {
 return "NidoranF";
 }
+public int getNumero() {
+return 29;
+}
 }

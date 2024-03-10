@@ -8,4 +8,7 @@ super(132,nom,Type.NORMAL,Type.SANS,48,48,48,48);
 public String getEspece() {
 return "Metamorph";
 }
+public int getNumero() {
+return 132;
+}
 }

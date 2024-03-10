@@ -8,4 +8,7 @@ super(13,nom,Type.INSECTE,Type.POISON,40,35,30,50);
 public String getEspece() {
 return "Aspicot";
 }
+public int getNumero() {
+return 13;
+}
 }

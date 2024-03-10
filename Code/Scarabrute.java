@@ -8,4 +8,7 @@ super(127,nom,Type.INSECTE,Type.SANS,65,125,100,85);
 public String getEspece() {
 return "Scarabrute";
 }
+public int getNumero() {
+return 127;
+}
 }

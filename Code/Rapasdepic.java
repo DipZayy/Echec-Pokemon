@@ -8,4 +8,7 @@ super(22,nom,Type.NORMAL,Type.VOL,65,90,65,100);
 public String getEspece() {
 return "Rapasdepic";
 }
+public int getNumero() {
+return 22;
+}
 }

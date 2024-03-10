@@ -8,4 +8,7 @@ super(88,nom,Type.POISON,Type.SANS,80,80,50,25);
 public String getEspece() {
 return "Tadmorv";
 }
+public int getNumero() {
+return 88;
+}
 }

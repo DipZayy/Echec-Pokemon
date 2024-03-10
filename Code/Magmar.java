@@ -8,4 +8,7 @@ super(126,nom,Type.FEU,Type.SANS,65,95,57,93);
 public String getEspece() {
 return "Magmar";
 }
+public int getNumero() {
+return 126;
+}
 }

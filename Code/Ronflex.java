@@ -8,4 +8,7 @@ super(143,nom,Type.NORMAL,Type.SANS,160,110,65,30);
 public String getEspece() {
 return "Ronflex";
 }
+public int getNumero() {
+return 143;
+}
 }

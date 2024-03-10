@@ -8,4 +8,7 @@ super(85,nom,Type.NORMAL,Type.VOL,60,110,70,100);
 public String getEspece() {
 return "Dodrio";
 }
+public int getNumero() {
+return 85;
+}
 }

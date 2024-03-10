@@ -8,4 +8,7 @@ super(26,nom,Type.ELECTRIK,Type.SANS,60,90,55,100);
 public String getEspece() {
 return "Raichu";
 }
+public int getNumero() {
+return 26;
+}
 }

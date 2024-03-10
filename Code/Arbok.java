@@ -8,4 +8,7 @@ super(24,nom,Type.POISON,Type.SANS,60,85,69,80);
 public String getEspece() {
 return "Arbok";
 }
+public int getNumero() {
+return 24;
+}
 }

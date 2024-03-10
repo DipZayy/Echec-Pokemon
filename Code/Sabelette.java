@@ -8,4 +8,7 @@ super(27,nom,Type.SOL,Type.SANS,50,75,85,40);
 public String getEspece() {
 return "Sabelette";
 }
+public int getNumero() {
+return 27;
+}
 }

@@ -8,4 +8,7 @@ super(45,nom,Type.PLANTE,Type.POISON,75,80,85,50);
 public String getEspece() {
 return "Rafflesia";
 }
+public int getNumero() {
+return 45;
+}
 }

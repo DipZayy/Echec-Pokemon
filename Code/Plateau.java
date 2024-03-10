@@ -4,7 +4,9 @@ public class Plateau {
 
     private ArrayList<Piece> tableau = new ArrayList<Piece>();
 
-    public Plateau(){    //Constructeur par défaut sans choix
+    //Constructeur par défaut sans choix de pokémon 
+
+    public Plateau(){
 
         //---------------------Ligne 0---------------------//      Joueur 1
 
@@ -145,11 +147,35 @@ public class Plateau {
         tableau.add(41,new Piece(8,8,poke42,2));
     }
 
-
     //Constructeur custom a faire
 
+    //Permet de modifier les coordonnées d'une pièce dans le tableau
 
-    public Piece getCase(int x , int y){                //getCase avec 2 entiers
+    public void changement(Piece piece , Position nouvelleCo){
+
+        for(int i = 0 ; i <  tableau.size() ; i++){
+
+            if(tableau.get(i).equals(piece) == true){
+                tableau.get(i).setCoordonees(nouvelleCo);
+            }
+        }
+    }
+
+    //Permet de supprimer une pièce du tableau
+
+    public void suppr(Piece piece){
+
+        for(int i = 0 ; i <  tableau.size() ; i++){
+
+            if(tableau.get(i).equals(piece) == true){
+                tableau.remove(i);
+            }
+        }
+    }
+
+    //Méthode getCase utilisant 2 entiers
+
+    public Piece getCase(int x , int y){
 
         Position pos = new Position(x,y);
         Piece maPiece ;
@@ -163,7 +189,9 @@ public class Plateau {
         return null ;
     }
 
-    public Piece getCase(Position pos){                //getCase avec objet position
+    //Méthode getCase utilisant un objet de type position
+
+    public Piece getCase(Position pos){
 
         Piece maPiece ;
 
@@ -176,7 +204,9 @@ public class Plateau {
         return null ;
     }
 
-    public Piece getCase(char x , int y){                //getCase avec une lettre et un chiffre
+    //Méthode getCase utilisant un entier et une lettre
+
+    public Piece getCase(char x , int y){
 
         Position pos = new Position(x,y);
         Piece maPiece ;
@@ -189,6 +219,8 @@ public class Plateau {
         }
         return null ;
     }
+
+    //Cette fonction renvoie un tableau avec toute les pièces du joueur 1
 
     public ArrayList<Piece> getPiecesJoueur1() {
 
@@ -208,6 +240,8 @@ public class Plateau {
         return pokeJoueur1 ;
     }
 
+    //Cette fonction renvoie un tableau avec toute les pièces du joueur 2
+
     public ArrayList<Piece> getPiecesJoueur2() {
 
         ArrayList<Piece> pokeJoueur2 = new ArrayList<Piece>();
@@ -225,6 +259,8 @@ public class Plateau {
         }
         return pokeJoueur2 ;
     }
+
+    //Cette fonction renvoie une chaine de caractère avec tout les pokémons du plateau
 
     public String toString(){
         String liste_pokemon = new String() ;

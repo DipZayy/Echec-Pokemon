@@ -8,4 +8,7 @@ super(78,nom,Type.FEU,Type.SANS,65,100,70,105);
 public String getEspece() {
 return "Galopa";
 }
+public int getNumero() {
+return 78;
+}
 }

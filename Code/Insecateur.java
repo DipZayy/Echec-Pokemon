@@ -8,4 +8,7 @@ super(123,nom,Type.INSECTE,Type.VOL,70,110,80,105);
 public String getEspece() {
 return "Insecateur";
 }
+public int getNumero() {
+return 123;
+}
 }

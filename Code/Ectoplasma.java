@@ -8,4 +8,7 @@ super(94,nom,Type.SPECTRE,Type.POISON,60,65,60,110);
 public String getEspece() {
 return "Ectoplasma";
 }
+public int getNumero() {
+return 94;
+}
 }

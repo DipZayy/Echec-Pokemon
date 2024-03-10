@@ -8,4 +8,7 @@ super(131,nom,Type.EAU,Type.GLACE,130,85,80,60);
 public String getEspece() {
 return "Lokhlass";
 }
+public int getNumero() {
+return 131;
+}
 }

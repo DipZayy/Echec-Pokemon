@@ -8,4 +8,7 @@ super(23,nom,Type.POISON,Type.SANS,35,60,44,55);
 public String getEspece() {
 return "Abo";
 }
+public int getNumero() {
+return 23;
+}
 }

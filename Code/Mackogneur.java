@@ -8,4 +8,7 @@ super(68,nom,Type.COMBAT,Type.SANS,90,130,80,55);
 public String getEspece() {
 return "Mackogneur";
 }
+public int getNumero() {
+return 68;
+}
 }

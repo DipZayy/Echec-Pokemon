@@ -8,4 +8,7 @@ super(102,nom,Type.PLANTE,Type.PSY,60,40,80,40);
 public String getEspece() {
 return "Noeunoeuf";
 }
+public int getNumero() {
+return 102;
+}
 }

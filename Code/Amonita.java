@@ -8,4 +8,7 @@ super(138,nom,Type.ROCHE,Type.EAU,35,40,100,35);
 public String getEspece() {
 return "Amonita";
 }
+public int getNumero() {
+return 138;
+}
 }

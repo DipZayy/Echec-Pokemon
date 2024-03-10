@@ -43,6 +43,10 @@ do
   echo 'public String getEspece() {' >> $fichierAEcrire
   echo 'return "'$nom'";' >> $fichierAEcrire
   echo '}' >> $fichierAEcrire
+  
+  echo 'public int getNumero() {' >> $fichierAEcrire
+  echo 'return '$numero';' >> $fichierAEcrire
+  echo '}' >> $fichierAEcrire
 
   echo '}' >> $fichierAEcrire
 

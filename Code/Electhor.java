@@ -8,4 +8,7 @@ super(145,nom,Type.ELECTRIK,Type.VOL,90,90,85,100);
 public String getEspece() {
 return "Electhor";
 }
+public int getNumero() {
+return 145;
+}
 }

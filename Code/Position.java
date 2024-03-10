@@ -1,24 +1,41 @@
+import MG2D.geometrie.Point;
+
 public class Position {
     
     private int x ;
     private int y ;
 
-    public Position(){                      //Constructeur par défaut 
+    //Constructeur par défaut 
+
+    public Position(){                  
         this.x = 0 ;
         this.y = 0 ;
     }
 
-    public Position(int x , int y){         //Constructeur par paramètres
+    //Constructeur par paramètres
+
+    public Position(int x , int y){         
         setX(x);
         setY(y);
     }
 
-    public Position(Position copie){        //Constructeur par copie 
+    //Constructeur par copie 
+
+    public Position(Position copie){     
         this.x = copie.x ;
         this.y = copie.y ;
     }
 
-    public Position(char x , int y){        //Constructeur lettre et chiffre
+    //Constructeur qui utilise les point de MG2D
+
+    public Position(Point p){       
+        this.x = p.getX();
+        this.y = p.getY();
+    }
+
+    //Constructeur lettre et chiffre
+
+    public Position(char x , int y){
         switch(x){
             case 'A':
                 this.x = 0 ;
@@ -51,6 +68,8 @@ public class Position {
         this.y = y ;
     }
 
+    //Cette fonction verifie si deux objets de type position sont identiques
+
     public boolean equals(Position pos){
         if(this.x == pos.x && this.y == pos.y){
             return true ;
@@ -59,6 +78,8 @@ public class Position {
             return false ;
         }
     }
+
+    //Cette fonction renvoie une chaines de caractère avec toute les informations sur la positions
 
     public String toString() {
 
@@ -99,6 +120,8 @@ public class Position {
         String co = String.valueOf(xChar) + this.y;
         return co; 
     }
+
+    //Cette fonction permet de modifier X
     
     public void setX(int x){
         if (x >= 0 && x <= 8){
@@ -109,6 +132,8 @@ public class Position {
         }
     }
 
+    //Cette fonction permet de modifier Y
+
     public void setY(int y){
         if (y >= 0 && y <= 8){
             this.y = y ;
@@ -118,9 +143,13 @@ public class Position {
         }
     }
 
+    //Cette fonction permet d'obtenir X
+
     public int getX(){
         return this.x ;
     }
+
+    //Cette fonction permet d'obtenir Y
 
     public int getY(){
         return this.y ;

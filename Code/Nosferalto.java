@@ -8,4 +8,7 @@ super(42,nom,Type.POISON,Type.VOL,75,80,70,90);
 public String getEspece() {
 return "Nosferalto";
 }
+public int getNumero() {
+return 42;
+}
 }

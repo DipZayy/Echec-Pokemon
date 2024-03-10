@@ -8,4 +8,7 @@ super(113,nom,Type.NORMAL,Type.SANS,250,5,5,50);
 public String getEspece() {
 return "Leveinard";
 }
+public int getNumero() {
+return 113;
+}
 }

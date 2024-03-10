@@ -8,4 +8,7 @@ super(91,nom,Type.EAU,Type.GLACE,50,95,180,70);
 public String getEspece() {
 return "Crustabri";
 }
+public int getNumero() {
+return 91;
+}
 }

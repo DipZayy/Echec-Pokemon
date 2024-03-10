@@ -8,4 +8,7 @@ super(122,nom,Type.PSY,Type.SANS,40,45,65,90);
 public String getEspece() {
 return "M_Mime";
 }
+public int getNumero() {
+return 122;
+}
 }

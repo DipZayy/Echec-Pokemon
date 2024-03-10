@@ -8,4 +8,7 @@ super(104,nom,Type.SOL,Type.SANS,50,50,95,35);
 public String getEspece() {
 return "Osselait";
 }
+public int getNumero() {
+return 104;
+}
 }

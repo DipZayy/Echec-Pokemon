@@ -8,4 +8,7 @@ super(87,nom,Type.EAU,Type.GLACE,90,70,80,70);
 public String getEspece() {
 return "Lamantine";
 }
+public int getNumero() {
+return 87;
+}
 }

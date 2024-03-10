@@ -8,4 +8,7 @@ super(51,nom,Type.SOL,Type.SANS,35,80,50,120);
 public String getEspece() {
 return "Triopikeur";
 }
+public int getNumero() {
+return 51;
+}
 }

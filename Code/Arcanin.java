@@ -8,4 +8,7 @@ super(59,nom,Type.FEU,Type.SANS,90,110,80,95);
 public String getEspece() {
 return "Arcanin";
 }
+public int getNumero() {
+return 59;
+}
 }

@@ -8,4 +8,7 @@ super(35,nom,Type.NORMAL,Type.SANS,70,45,48,35);
 public String getEspece() {
 return "Melofee";
 }
+public int getNumero() {
+return 35;
+}
 }

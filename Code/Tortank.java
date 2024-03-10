@@ -8,4 +8,7 @@ super(9,nom,Type.EAU,Type.SANS,79,83,100,78);
 public String getEspece() {
 return "Tortank";
 }
+public int getNumero() {
+return 9;
+}
 }

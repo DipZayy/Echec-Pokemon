@@ -8,4 +8,7 @@ super(53,nom,Type.NORMAL,Type.SANS,65,70,60,115);
 public String getEspece() {
 return "Persian";
 }
+public int getNumero() {
+return 53;
+}
 }
