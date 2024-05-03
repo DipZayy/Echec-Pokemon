@@ -1,22 +1,44 @@
-Projet universitaire BUT Informatique :
+# Jeu d'échecs Pokémon
 
-2023/2024
-Louis Prévost
+Projet universitaire - BUT Informatique 2023/2024
+Réalisé par Louis Prévost
 
-Jeu d'échecs avec des pokémons.
+## Description du Projet
 
-Utilisation de la bibliothèque MG2D.
+Ce projet a été développé dans le cadre du cours de programmation orienté objets en Java à l'université.
 
-Les 150 classes pour chacun des pokémons ont été réalisées avec un script sh.
+## Technologies Utilisées
 
--------------------Comment Jouer-------------------
+- Langage : Java
+- Bibliothèque graphique : MG2D
 
-1. Ouvrez un terminal dans le dossier Code
-2. Entrez : "javac Main.java" puis "java Main"
+## Génération des Classes pour chaques Pokémon
 
-----------------Informations Combat----------------
+Les 150 classes pour chacun des pokémons ont été réalisées à l'aide d'un script sh.
 
-- On répète les lignes suivante jusqu'a la mort d'un des deux pokémons :
-- Le plus rapide commence à attaquer
-- Les dégats de chaque pokémon suivent ce calcul : dégat de mon pokémon - défense du pokémon adverse
-- Si celui qui a subit l'attaque est encore en vie alors c'est son tour d'attaquer sinon on annonce la victoire du premier pokémon
+## Comment Jouer
+
+1. Ouvrez un terminal dans le dossier `Code`.
+2. Compilez le programme en entrant la commande suivante :
+    ```
+    javac Main.java
+    ```
+3. Lancez le jeu en entrant la commande :
+    ```
+    java Main
+    ```
+
+## Informations sur les Combats
+
+Le combat se déroule comme suit :
+
+1. Les joueurs alternent les tours jusqu'à ce que l'un des deux pokémons soit vaincu.
+2. Le pokémon le plus rapide attaque en premier.
+3. Les dégâts infligés par chaque attaque suivent le calcul suivant :
+    ```
+    Dégât de mon pokémon - Défense du pokémon adverse
+    ```
+4. Si le pokémon adverse survit à l'attaque, c'est à son tour d'attaquer. Sinon, la victoire est annoncée pour le premier pokémon.
+
+---
+© 2024 Louis Prévost
